@@ -37,16 +37,18 @@ class _UTipState extends State<UTip> {
         title: const Text('Utip'),
       ),
       body: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           Container(
             padding: const EdgeInsets.all(18),
             decoration: BoxDecoration(
-              color: Colors.deepPurple,
+              color: Theme.of(context).colorScheme.inversePrimary,
               borderRadius: BorderRadius.circular(10)
             ),
             child: Column(
               children: [
-                const Text('Total per person'),
+                Text('Total per person',
+                style: Theme.of(context).textTheme.displayMedium,),
                 const Text('\$23.88')
               ],
             )),
